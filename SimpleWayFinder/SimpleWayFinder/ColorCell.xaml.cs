@@ -31,7 +31,7 @@ namespace SimpleWayFinder
                     Background = Brushes.Transparent;
                     break;
                 case CellStates.OBSTACLE:
-                    Background = Brushes.Black;
+                    Background = Brushes.Aquamarine;
                     break;
                 case CellStates.START:
                     Background = Brushes.Blue;

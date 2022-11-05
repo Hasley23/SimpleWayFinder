@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         Title="Simple Way Finder" Width="904" MinWidth="900" MinHeight="450">
     <Canvas x:Name="ContentContainer" Background="AliceBlue">
-        <Button x:Name="buttonOpenRef" Width="100" Height="20" Content="Референс" Click="buttonOpenRef_Click"/>
+        <Button x:Name="buttonOpenRef" Width="100" Height="20" Content="Ref" Click="buttonOpenRef_Click"/>
         <Image x:Name="imgRef" Canvas.Top="25" Stretch="Fill"/>
         <Canvas x:Name="wayGrid" Margin="2" Canvas.Top="25" Background="Transparent">
             
@@ -14,11 +14,11 @@
         <Label x:Name="tbSliderCol" Canvas.Left="369" Height="26" Width="30" FontSize="11" Canvas.Top="-6" Content="2"/>
         <Label x:Name="tbSliderRow" Canvas.Left="609" Height="26" Width="30" FontSize="11" Canvas.Top="-6" Content="2"/>
         <Slider x:Name="sliderCol" Canvas.Left="279" Width="90" Minimum="2" Maximum="100" SmallChange="1" Value="2" Height="20" ValueChanged="sliderCol_ValueChanged" IsSnapToTickEnabled="True"/>
-        <Label Content="Ширина сетки:" Canvas.Left="189" Height="26" Width="85" FontSize="11" Canvas.Top="-6"/>
-        <Label Content="Высота сетки:" Canvas.Left="429" Height="26" Width="80" FontSize="11" Canvas.Top="-6"/>
+        <Label Content="Grid width:" Canvas.Left="189" Height="26" Width="85" FontSize="11" Canvas.Top="-6"/>
+        <Label Content="Grid height:" Canvas.Left="429" Height="26" Width="80" FontSize="11" Canvas.Top="-6"/>
         <Slider x:Name="sliderRow" Canvas.Left="514" Width="90" Minimum="2" Maximum="100" SmallChange="1" Value="2" Height="20" ValueChanged="sliderRow_ValueChanged" IsSnapToTickEnabled="True"/>
-        <Button x:Name="buttonCreateGrid" Width="100" Height="20" Content="Построить сетку" Canvas.Left="644" Click="buttonCreateGrid_Click"/>
-        <Button x:Name="buttonStart" Width="100" Height="20" Content="Найти путь" Canvas.Left="749" Click="buttonStart_Click"/>
+        <Button x:Name="buttonCreateGrid" Width="100" Height="20" Content="Build a grid" Canvas.Left="644" Click="buttonCreateGrid_Click"/>
+        <Button x:Name="buttonStart" Width="100" Height="20" Content="Find the way" Canvas.Left="749" Click="buttonStart_Click"/>
     </Canvas>
 
 </Window>
