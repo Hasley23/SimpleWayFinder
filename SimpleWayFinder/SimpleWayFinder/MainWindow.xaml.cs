@@ -94,8 +94,8 @@ namespace SimpleWayFinder
         {
             ofd = new OpenFileDialog();
             // Форматы
-            ofd.Title = "Выбор референса";
-            ofd.Filter = "Все изображения |*.jpg;*.jpeg;*.png|" +
+            ofd.Title = "Reference selection";
+            ofd.Filter = "All images |*.jpg;*.jpeg;*.png|" +
               "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
               "Portable Network Graphic (*.png)|*.png";
 
@@ -109,8 +109,8 @@ namespace SimpleWayFinder
                 }
                 catch (SecurityException ex)
                 {
-                    MessageBox.Show($"Ошибка доступа.\n\nТекст ошибки: {ex.Message}\n\n" +
-                    $"Details:\n\n{ex.StackTrace}");
+                    //MessageBox.Show($"Access denided.\n\nError text: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}");
+                    MessageBox.Show($"Access denided.\n\nError text: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -150,7 +150,8 @@ namespace SimpleWayFinder
             // Обработка некорректного ввода
             if (start == null || target == null)
             {
-                MessageBox.Show("Нет отправной/целевой точки!");
+                //MessageBox.Show("Select start and end points!");
+                MessageBox.Show("Select start and end points!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
             }
 
@@ -176,7 +177,7 @@ namespace SimpleWayFinder
                 }
                 catch 
                 {
-                    MessageBox.Show("Поиск не дал результатов...");
+                    MessageBox.Show( "The search has not given any results...", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return false;
                 }
                 
