@@ -9,8 +9,10 @@ Let's take a look:
 *Then you can create coordinate grid (sliders 'Grid width' and 'Grid height' + 'Buind a grid' button) and add a reference picture ('Ref' button)*
 ![ref](/pic/ref.png)
 
-*By holding the right mouse button, you can draw obstacles. Then by cklicking the left mouse button setup two positions (start and end of the way).*
+*By holding the left mouse button, you can draw obstacles. Then by clicking the rigth mouse button setup two positions (start and end of the way).*
 ![draw](/pic/draw.png)
 
 *And finally, push the button 'Find the way'. Congratulations!*
 ![draw](/pic/res.png)
+
+*To see how the application works, follow the link below:* [Project structure](/dev.md)
