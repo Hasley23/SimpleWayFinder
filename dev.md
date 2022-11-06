@@ -11,7 +11,7 @@
 ![CellStates](/pic/CellStates.png)
 
 3. *SWFCore*:
-     This class contains a *position structure* definition, a search graph class definition *(GridGraph class)* and an *SearchEngine* class with heuristic function and *A\** algorithm realization.
+     This class contains *position structure* definition, search graph class definition *(GridGraph class)*, *SearchEngine* class with heuristic function and *A\** algorithm realization.
 
 
 
